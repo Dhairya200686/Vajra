@@ -1,7 +1,7 @@
 rich # Terminal output and formatting
-requests
-pypdf
-psutil
-python-docx
-pytest
-chromadb
+requests #HTTP client for calling external APIs
+pypdf #PDF parsing/processing.
+psutil #System monitoring.
+python-docx #Microsoft Word document handling.
+pytest #Confirms the project has unit/integration tests.
+chromadb #Local vector database.
