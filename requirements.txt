@@ -1,0 +1,7 @@
+rich
+requests
+pypdf
+psutil
+python-docx
+pytest
+chromadb
