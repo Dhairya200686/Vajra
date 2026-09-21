@@ -1,0 +1,17 @@
+# VAJRA — Git ignore rules
+vajra_sessions/
+vajra_config.json
+vajra_library/
+vajra_audit.log
+vajra.log
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.pdf
+*.docx
+.pytest_cache/
+*.egg-info/
+dist/
+build/
