@@ -16,7 +16,7 @@ python vajra.py ask "what does the book say about ARP spoofing?"
 
 ## Why VAJRA
 
-Most AI CLI tools need a subscription and send your data to a server somewhere. VAJRA doesn't. It's built for people who want real AI assistance for daily technical work — Linux administration, code review, security research, document analysis — without the cloud dependency.
+Most AI CLI tools need a subscription and send your data to a server somewhere. VAJRA doesn't. It's built for people who want real AI assistance for daily technical work — Linux administration, code review, security research, document analysis without the cloud dependency.
 
 | | VAJRA | Typical cloud AI CLI |
 |---|---|---|
