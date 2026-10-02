@@ -16,7 +16,7 @@ python vajra.py ask "what does the book say about ARP spoofing?"
 
 ## Why VAJRA
 
-Most AI CLI tools need a subscription and send your data to a server somewhere. VAJRA doesn't. It's built for people who want real AI assistance for daily technical work — Linux administration, code review, security research, document analysis without the cloud dependency.
+Most AI CLI tools need a subscription and send your data to a server somewhere. VAJRA doesn't. It's built for people who want real AI assistance for daily technical work — Linux administration, code review, security research, document analysis — without the cloud dependency.
 
 | | VAJRA | Typical cloud AI CLI |
 |---|---|---|
@@ -143,6 +143,66 @@ VAJRA [SYSADMIN] > sysinfo
 VAJRA [SYSADMIN] > library add postmortem.pdf
 VAJRA [SYSADMIN] > ask what did we conclude last time this happened?
 ```
+
+---
+
+## See It In Action
+
+Real terminal output — VAJRA renders live markdown with syntax-highlighted code, not suppressed plain text.
+
+### Cybersecurity Research — `cyber` mode
+```bash
+python vajra.py -m cyber "Can you tell me what is Wireless Network Security Assessment? We have this as a project"
+```
+![VAJRA cyber mode — wireless security assessment methodology](screenshots/cyber-mode.png)
+
+Structured methodology (Recon → Analysis → Exploitation → Reporting), vulnerability mechanisms broken down by layer, and the usual VAJRA footer — all rendered as real markdown headers and bullets.
+
+### Linux Administration — `linux` mode
+```bash
+python vajra.py -m linux "Can you tell me how can I manage RBAC in Linux?"
+```
+![VAJRA linux mode — RBAC management with setfacl](screenshots/linux-mode.png)
+
+Exact commands in syntax-highlighted code blocks, flags explained individually, and a worked example with expected output.
+
+### Code Explanation — `dev` mode
+```bash
+python vajra.py -m dev "Can you explain me what are Metaclasses in Python?"
+```
+![VAJRA dev mode — explaining Python metaclasses with syntax highlighting](screenshots/dev-mode.png)
+
+Full Python syntax highlighting on code examples, numbered use cases, and a TL;DR at the end.
+
+### Document Analysis — `doc` mode
+```bash
+python vajra.py -m doc read VeraCrypt_Beginners_Tutorial.docx "Summarize this document for me"
+```
+![VAJRA doc mode — summarizing a DOCX tutorial](screenshots/doc-mode.png)
+
+Reads the file, confirms the word count, then produces a structured summary — overview, key findings, important details, conclusions, and action items — grounded strictly in the document's content.
+
+### Reviewing Code — `dev` mode with saved output
+```bash
+python vajra.py -m dev read nexus_ai_2.py -o review.txt
+```
+![VAJRA dev mode — reviewing a Python source file and saving the output](screenshots/file-analysis.png)
+
+Reads an entire source file, produces a full technical breakdown, and saves it to a file — useful for reviewing old projects or someone else's code.
+
+### Model Flexibility — any Ollama model, any time
+```bash
+python vajra.py --model gemma3:4b "Explain is it possible to log in to Active Directory from Linux or Mac box?"
+```
+![VAJRA using a different model via --model flag](screenshots/model-flexibility.png)
+
+Same VAJRA, different model — swapped in for a single query with `--model`, no config changes needed.
+
+### System Diagnostics — `sysinfo`
+
+`vajra sysinfo` pulls a live snapshot of the machine it's running on — OS, uptime, CPU and RAM usage, disk partitions, active network interfaces, listening ports, and the top processes by CPU — all gathered locally via `psutil`, cross-platform on Windows, Linux, and macOS. Run it bare for just the snapshot, or follow it with a question (`vajra sysinfo "why is my system slow?"`) and VAJRA diagnoses it in `sysadmin` mode using that live data as grounding.
+
+*(Screenshot coming soon)*
 
 ---
 
