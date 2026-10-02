@@ -154,7 +154,8 @@ Real terminal output — VAJRA renders live markdown with syntax-highlighted cod
 ```bash
 python vajra.py -m cyber "Can you tell me what is Wireless Network Security Assessment? We have this as a project"
 ```
-![VAJRA cyber mode — wireless security assessment methodology](<img width="805" height="1067" alt="Screenshot 2026-10-02 123352" src="https://github.com/user-attachments/assets/5e3b119a-d947-4e18-9659-59c5fb640f0f" />
+<img width="805" height="1067" alt="Screenshot 2026-10-02 123352" src="https://github.com/user-attachments/assets/0924cb93-b7a1-40b6-b88d-160daf33d263" />
+
 )
 
 Structured methodology (Recon → Analysis → Exploitation → Reporting), vulnerability mechanisms broken down by layer, and the usual VAJRA footer — all rendered as real markdown headers and bullets.
