@@ -158,13 +158,13 @@ python vajra.py -m cyber "Can you tell me what is Wireless Network Security Asse
 
 )
 
-Structured methodology (Recon → Analysis → Exploitation → Reporting), vulnerability mechanisms broken down by layer, and the usual VAJRA footer — all rendered as real markdown headers and bullets.
+Structured methodology (Recon → Analysis → Exploitation → Reporting), vulnerability mechanisms broken down by layer, and the usual VAJRA footer all rendered as real markdown headers and bullets.
 
 ### Linux Administration — `linux` mode
 ```bash
 python vajra.py -m linux "Can you tell me how can I manage RBAC in Linux?"
 ```
-![VAJRA linux mode — RBAC management with setfacl](screenshots/linux-mode.png)
+<img width="947" height="1020" alt="Screenshot 2026-10-02 124135" src="https://github.com/user-attachments/assets/5b61a9b7-97c8-409b-a6e3-bad02d569d46" />
 
 Exact commands in syntax-highlighted code blocks, flags explained individually, and a worked example with expected output.
 
@@ -172,7 +172,7 @@ Exact commands in syntax-highlighted code blocks, flags explained individually, 
 ```bash
 python vajra.py -m dev "Can you explain me what are Metaclasses in Python?"
 ```
-![VAJRA dev mode — explaining Python metaclasses with syntax highlighting](screenshots/dev-mode.png)
+<img width="1352" height="1005" alt="Screenshot 2026-10-02 125125" src="https://github.com/user-attachments/assets/7a531b15-d5b3-444c-b81c-2eddf06d5610" />
 
 Full Python syntax highlighting on code examples, numbered use cases, and a TL;DR at the end.
 
@@ -180,31 +180,35 @@ Full Python syntax highlighting on code examples, numbered use cases, and a TL;D
 ```bash
 python vajra.py -m doc read VeraCrypt_Beginners_Tutorial.docx "Summarize this document for me"
 ```
-![VAJRA doc mode — summarizing a DOCX tutorial](screenshots/doc-mode.png)
+<img width="1302" height="682" alt="Screenshot 2026-10-02 125725" src="https://github.com/user-attachments/assets/0356592f-1af9-47e6-a14e-bd89e57683fd" />
 
-Reads the file, confirms the word count, then produces a structured summary — overview, key findings, important details, conclusions, and action items — grounded strictly in the document's content.
+
+Reads the file, confirms the word count, then produces a structured summary overview, key findings, important details, conclusions, and action items grounded strictly in the document's content.
 
 ### Reviewing Code — `dev` mode with saved output
 ```bash
 python vajra.py -m dev read nexus_ai_2.py -o review.txt
 ```
-![VAJRA dev mode — reviewing a Python source file and saving the output](screenshots/file-analysis.png)
+<img width="1791" height="726" alt="Screenshot 2026-10-02 130417" src="https://github.com/user-attachments/assets/f309932c-aec5-49ab-ac45-30774ae2a91c" />
 
-Reads an entire source file, produces a full technical breakdown, and saves it to a file — useful for reviewing old projects or someone else's code.
+
+Reads an entire source file, produces a full technical breakdown, and saves it to a file useful for reviewing old projects or someone else's code.
 
 ### Model Flexibility — any Ollama model, any time
 ```bash
 python vajra.py --model gemma3:4b "Explain is it possible to log in to Active Directory from Linux or Mac box?"
 ```
-![VAJRA using a different model via --model flag](screenshots/model-flexibility.png)
+<img width="1917" height="735" alt="Screenshot 2026-10-02 130851" src="https://github.com/user-attachments/assets/0edf896b-cd95-44fa-a8b0-d9cc0a3405d5" />
 
-Same VAJRA, different model — swapped in for a single query with `--model`, no config changes needed.
+
+Same VAJRA, different model swapped in for a single query with `--model`, no config changes needed.
 
 ### System Diagnostics — `sysinfo`
 
-`vajra sysinfo` pulls a live snapshot of the machine it's running on — OS, uptime, CPU and RAM usage, disk partitions, active network interfaces, listening ports, and the top processes by CPU — all gathered locally via `psutil`, cross-platform on Windows, Linux, and macOS. Run it bare for just the snapshot, or follow it with a question (`vajra sysinfo "why is my system slow?"`) and VAJRA diagnoses it in `sysadmin` mode using that live data as grounding.
+`vajra sysinfo` pulls a live snapshot of the machine it's running on OS, uptime, CPU and RAM usage, disk partitions, active network interfaces, listening ports, and the top processes by CPU all gathered locally via `psutil`, cross-platform on Windows, Linux, and macOS. Run it bare for just the snapshot, or follow it with a question (`vajra sysinfo "why is my system slow?"`) and VAJRA diagnoses it in `sysadmin` mode using that live data as grounding.
 
-*(Screenshot coming soon)*
+<img width="1437" height="662" alt="Screenshot 2026-10-02 123510" src="https://github.com/user-attachments/assets/f25d9615-1322-479b-8955-31ee8cbafb63" />
+
 
 ---
 
